@@ -67,29 +67,29 @@ void calculare_valoare_maxima_si_optima(struct homar *homari, int numar_homari, 
     int maximul;
     int capacitate_ramasa_plasa;
 
-    matrice.numar_coloane = numar_homari + 1;   ///Definirea matricei unde se calculeaza valoarea rucsacului
-    matrice.numar_randuri = capacitate_plasa + 1;
+    matrice.numar_randuri = numar_homari + 1;   ///Definirea matricei unde se calculeaza valoarea rucsacului
+    matrice.numar_coloane = capacitate_plasa + 1;
     matrice.matrice = calloc((matrice.numar_coloane) * (matrice.numar_randuri), sizeof(int));
 
     ///Aici am folosit algoritmul rucsacului 0 1 pentru a calcula o valoare maxima acumulata pe homari
-    for(iterator_homari=1;iterator_homari<matrice.numar_coloane;iterator_homari++)
+    for(iterator_homari=1;iterator_homari<matrice.numar_randuri;iterator_homari++)
     {
-        for(iterator_greutate=1;iterator_greutate<matrice.numar_randuri;iterator_greutate++)
+        for(iterator_greutate=1;iterator_greutate<matrice.numar_coloane;iterator_greutate++)
         {
             capacitate_ramasa_plasa=iterator_greutate-homari[iterator_homari-1].greutate;
             if(capacitate_ramasa_plasa<0)
             {
                 ///Aici luam cazul in care greutatea homarului nu incape in plasa si o introducem pe cea anterioara
-                matrice.matrice[iterator_homari*matrice.numar_randuri+iterator_greutate]=matrice.matrice[(iterator_homari-1)*matrice.numar_randuri+iterator_greutate];
+                matrice.matrice[iterator_homari*matrice.numar_coloane+iterator_greutate]=matrice.matrice[(iterator_homari-1)*matrice.numar_coloane+iterator_greutate];
             }
             else
             {
                 ///In cazul asta greutatea corpului incape in plasa si calculam maximul dintre valoarea anterioara si valoarea curenta + valoarea care mai incape
-                valoare_curenta_fara_homarul_curent=matrice.matrice[(iterator_homari-1)*matrice.numar_randuri+iterator_greutate];
-                valoare_ramasa_fara_homarul_curent=matrice.matrice[(iterator_homari-1)*matrice.numar_randuri+capacitate_ramasa_plasa];
+                valoare_curenta_fara_homarul_curent=matrice.matrice[(iterator_homari-1)*matrice.numar_coloane+iterator_greutate];
+                valoare_ramasa_fara_homarul_curent=matrice.matrice[(iterator_homari-1)*matrice.numar_coloane+capacitate_ramasa_plasa];
                 valoare_homar_curent_plus_valoare_ramasa=valoare_ramasa_fara_homarul_curent+homari[iterator_homari-1].valoare;
                 maximul=maxim_valori(valoare_homar_curent_plus_valoare_ramasa,valoare_curenta_fara_homarul_curent);
-                matrice.matrice[iterator_homari*matrice.numar_randuri+iterator_greutate]=maximul;
+                matrice.matrice[iterator_homari*matrice.numar_coloane+iterator_greutate]=maximul;
             }
         }
     }
