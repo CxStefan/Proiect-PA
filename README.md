@@ -3,19 +3,24 @@
   INSTRUCȚIUNI DE COMPILARE AL CODULUI 
 
    Din linia de comanda :
+
+   Înainte de toate trebuie să schimbăm directorul curent din linia de comandă în directorul în care am instalat fișierele,
+   folosind comanda : cd <calea din directorul unde s-au instalat fișierele respective> ( Exemplu C:\Users )
+
+  Apoi trebuie urmăriți următorii pași : 
    
-1. Compilarea fiecărui fișier .c într-un fișier obiect (.o)
+1. Compilarea fiecărui fișier .c într-un fișier obiect (.o).
 
    Folosind : gcc -c Functii-Determinare-Valoare-Homari.c Fisier-Principal.c
 
-3. Linkarea fișierelor obiect într-un executabil
+3. Linkarea fișierelor obiect într-un executabil.
 
    Folosind : gcc -o Executabil Functii-Determinare-Valoare-Homari.o Fisier-Principal.o
 
-5. Executarea programului
+5. Executarea programului.
 
     Folosind : Executabil.exe
 
 
-Apoi se ruleaza programul.
-Urmatorul pas este sa introduci capacitatea plasei, iar dupa sa specifici numarul de homari. 
+Apoi se rulează programul.
+Următorul pas este să se introducă capacitatea plasei, iar după să se specifice numărul de homari. 
