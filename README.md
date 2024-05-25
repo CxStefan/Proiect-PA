@@ -2,7 +2,9 @@
 
 
 INSTRUCȚIUNI ÎNAINTE DE COMPILARE :
-  Se instalează cele 3 fișiere și se pun toate fișierele într-un director.
+  
+1.  Se instalează arhiva sub numele de Proiect-PA.zip.
+2.  Se dezarhiveaza arhiva într-un director dorit.
 
   INSTRUCȚIUNI DE COMPILARE AL CODULUI 
 
