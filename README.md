@@ -1,2 +1,3 @@
 # Proiect-PA
-Aflarea valorii maxime homarilor care sa incapa intr-o anumita plasa
+
+Instructiuni de compilare al codului
