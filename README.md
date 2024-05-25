@@ -1,5 +1,9 @@
 # Proiect-PA
 
+
+INSTRUCȚIUNI ÎNAINTE DE COMPILARE :
+  Se instalează cele 3 fișiere și se pun toate fișierele într-un director.
+
   INSTRUCȚIUNI DE COMPILARE AL CODULUI 
 
    Din linia de comanda :
