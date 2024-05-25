@@ -11,7 +11,8 @@ INSTRUCȚIUNI ÎNAINTE DE COMPILARE :
    Din linia de comanda :
 
    Înainte de toate trebuie să schimbăm directorul curent din linia de comandă în directorul în care am instalat fișierele,
-   folosind comanda : cd <calea din directorul unde s-au instalat fișierele respective> ( Exemplu C:\Users )
+   folosind comanda : 
+   cd <calea din directorul unde s-au instalat fișierele respective> ( Exemplu: cd C:\Users )
 
   Apoi trebuie urmăriți următorii pași : 
    
