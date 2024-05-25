@@ -10,8 +10,12 @@
 
 3. Linkarea fișierelor obiect într-un executabil
 
-   Folosind : gcc -o Functii-Determinare-Valoare-Homari.o Fisier-Principal.o
+   Folosind : gcc -o Executabil Functii-Determinare-Valoare-Homari.o Fisier-Principal.o
 
 5. Executarea programului
 
-    Folosind : Fisier-Principal.exe
+    Folosind : Executabil.exe
+
+
+Apoi se ruleaza programul.
+Urmatorul pas este sa introduci capacitatea plasei, iar dupa sa specifici numarul de homari. 
