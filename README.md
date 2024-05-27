@@ -3,7 +3,7 @@
 
 INSTRUCȚIUNI ÎNAINTE DE COMPILARE :
   
-1.  Se instalează arhiva sub numele de Proiect-PA.zip.
+1.  Se instalează arhiva sub numele de Cumpanasu-Stefan-Adrian-ProiectPA-CR11B.zip.
 2.  Se dezarhiveaza arhiva într-un director dorit.
 
   INSTRUCȚIUNI DE COMPILARE AL CODULUI 
